@@ -38,7 +38,7 @@ const ChatInterface = ({ isReady, userEmail, initialMessages = [], onMessagesCha
 
     try {
       const response = await axios.post('https://ragravity-2.onrender.com/query', {
-        query: userQuery
+        question: userQuery
       });
 
       const newAssistantMsg = {
