@@ -37,7 +37,7 @@ const ChatInterface = ({ isReady, userEmail, initialMessages = [], onMessagesCha
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/query', {
+      const response = await axios.post('https://ragravity-2.onrender.com/query', {
         query: userQuery
       });
 
